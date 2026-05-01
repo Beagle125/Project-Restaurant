@@ -1,0 +1,8 @@
+html, body{
+    margin: 0; /* Remove default browser margins */
+    padding: 0;
+    --myGreen: #3F792C;
+    --myYellow: #C5A545;
+    --HeaderFontSize: 4rem;
+    --BodyFontSize: 2rem;
+}
