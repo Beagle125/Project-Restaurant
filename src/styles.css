@@ -1,8 +1,64 @@
 html, body{
     margin: 0; /* Remove default browser margins */
     padding: 0;
+    background-color: black;/* To be removed */
     --myGreen: #3F792C;
     --myYellow: #C5A545;
-    --HeaderFontSize: 4rem;
-    --BodyFontSize: 2rem;
+    --HeaderFontSize: 3rem;
+    --BodyFontSize: 1rem;
+}
+
+*{
+    font-family: serif; /*This will be changed*/
+}
+
+/*All navbar and header styles*/
+header{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid var(--myYellow);
+    box-sizing: border-box;
+    display: flex;
+    height: 110px;
+    justify-content: space-between;
+    padding: 10px 60px 10px 60px;
+    width: 100vw;
+}
+
+nav{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+nav button{
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    color: white;
+    cursor: pointer;
+    font-size: var(--BodyFontSize);
+    height: 30px;
+    position: relative;
+    width: 100px;
+    transition: all 0.3s ease;
+}
+
+nav button:hover{
+    color: var(--myYellow);
+}
+
+nav button::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--myYellow);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav button:hover::after{
+    transform: scaleX(0.4);
 }

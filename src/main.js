@@ -1,1 +1,1 @@
-alert("Tea is more than hot-leaf juice!");
+import './styles.css';
