@@ -5,7 +5,7 @@ html, body{
     --myGreen: #3F792C;
     --myYellow: #C5A545;
     --HeaderFontSize: 3rem;
-    --BodyFontSize: 1rem;
+    --BodyFontSize: 1.3rem;
 }
 
 /*Set all font to be the same*/
@@ -76,7 +76,7 @@ nav button:hover::after{
 /*Home page styles*/
 #homePageContainer{
     background-color: rgba(0, 0, 0, 1);
-    height: 200vh;
+    height: 200vh; /*To change to 200vh*/
     position: static;
     width: 100%;
 }
@@ -99,6 +99,7 @@ nav button:hover::after{
     box-sizing: border-box;
     display: flex;
     height: 100vh;
+    justify-content: flex-end;
     width: 100%;
 }
 
@@ -108,6 +109,16 @@ nav button:hover::after{
     flex-direction: column;
     justify-content: center;
     letter-spacing: 1.1ch;
+}
+
+/*Text Section Styles*/
+.textSection{
+    animation: slide-in 0.5s ease-out backwards;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    line-height: 1.5;
+    padding: 3rem 2rem 0 2rem;
+    width: 40%;
 }
 
 /*Font Styles*/
@@ -120,6 +131,7 @@ nav button:hover::after{
 
 .bodyText{
     color: white;
+    font-size: var(--BodyFontSize);
     text-align: center;
 }
 
