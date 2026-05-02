@@ -7,7 +7,7 @@ export const homePageLoader = (mainContainer) => {
     const homePage1 = document.createElement('div');
     const homePage2 = document.createElement('div');
     homePage1.id = 'homePage1';
-    homePage2.id = 'homePage2';
+    //homePage2.id = 'homePage2'; this is to be changed
 
     /*Create homePage1 elements*/
     const homePageTexts = document.createElement('div');
@@ -35,7 +35,7 @@ export const homePageLoader = (mainContainer) => {
 
     /*Stitch everything to the DOM*/
     homePageContainer.appendChild(homePage1);
-    homePageContainer.appendChild(homePage2);
+    //homePageContainer.appendChild(homePage2); this is to be changed
 
     mainContainer.appendChild(homePageContainer);
 };
