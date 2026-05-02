@@ -15,14 +15,19 @@ export const homePageLoader = (mainContainer) => {
     const highlightText1 = document.createElement('span');
     const breakLine1 = document.createElement('br');
     const bodyText1 = document.createElement('p');
+    const arrow = document.createElement('div');
+    const arrowSpan = document.createElement('span');
     homePageTexts.className = 'homePageTexts';
     headerText1.className = 'headerText';
     highlightText1.className = 'highlightText';
     bodyText1.className = 'bodyText';
+    arrow.className = 'scroll-down-arrow';
+
 
     headerText1.textContent = 'The Art of Tea,';
     highlightText1.textContent = 'Re-imagined';
     bodyText1.textContent = 'Bring balance to your taste buds';
+    arrowSpan.innerHTML = '&#8595';
 
     /*Create homePage2 element*/
     const textSection1 = document.createElement('div');
@@ -66,7 +71,11 @@ export const homePageLoader = (mainContainer) => {
     homePageTexts.appendChild(headerText1);
     homePageTexts.appendChild(bodyText1);
 
+
+    arrow.appendChild(arrowSpan);
+
     homePage1.appendChild(homePageTexts);
+    homePage1.appendChild(arrow);
 
     /*Stitch everything to the DOM*/
     homePageContainer.appendChild(homePage1);
