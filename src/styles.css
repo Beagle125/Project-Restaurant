@@ -76,7 +76,7 @@ nav button:hover::after{
 /*Home page styles*/
 #homePageContainer{
     background-color: rgba(0, 0, 0, 1);
-    height: 200vh; /*To change to 200vh*/
+    height: 200vh;
     position: static;
     width: 100%;
 }
@@ -87,7 +87,7 @@ nav button:hover::after{
     background-position: 20% 60%;
     box-sizing: border-box;
     display: flex;
-    height: 100vh;
+    height: 50%;
     justify-content: flex-start;
     padding-left: 80px;
     width: 100%;
@@ -98,7 +98,7 @@ nav button:hover::after{
     background-position: 30% 80%;
     box-sizing: border-box;
     display: flex;
-    height: 100vh;
+    height: 50%;
     justify-content: flex-end;
     width: 100%;
 }
@@ -115,6 +115,9 @@ nav button:hover::after{
 .textSection{
     animation: slide-in 0.5s ease-out backwards;
     background-color: rgba(0, 0, 0, 0.5);
+    border-image: linear-gradient(to bottom, transparent 0%, transparent 10%, var(--myYellow) 90%) 1;
+    border-left: solid 1px;
+    box-sizing: border-box;
     height: 100%;
     line-height: 1.5;
     padding: 3rem 2rem 0 2rem;
