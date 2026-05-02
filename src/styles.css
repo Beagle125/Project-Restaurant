@@ -8,6 +8,7 @@ html, body{
     --BodyFontSize: 1rem;
 }
 
+/*Set all font to be the same*/
 *{
     font-family: serif; /*This will be changed*/
 }
@@ -19,7 +20,7 @@ header{
     border-bottom: 1px solid var(--myYellow);
     box-sizing: border-box;
     display: flex;
-    height: 110px;
+    height: 90px;
     justify-content: space-between;
     padding: 10px 60px 10px 60px;
     position: fixed;
@@ -64,4 +65,63 @@ nav button::after{
 
 nav button:hover::after{
     transform: scaleX(0.4);
+}
+
+/*Main Content Div Styles*/
+#content{
+    background-color: green;
+    position: static;
+}
+
+/*Home page styles*/
+#homePageContainer{
+    background-color: rgba(0, 0, 0, 1);
+    height: 200vh;
+    position: static;
+    width: 100%;
+}
+
+#homePage1{
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) ), url('../static/home-bg.jpg');
+    background-position: 20% 10%;
+    box-sizing: border-box;
+    display: flex;
+    height: 100vh;
+    justify-content: flex-start;
+    padding-left: 80px;
+    width: 100%;
+}
+
+#homePage2{
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url('../static/home-bg2.png');
+    background-position: 30% 80%;
+    box-sizing: border-box;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.homePageTexts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    letter-spacing: 1.1ch;
+}
+
+/*Font Styles*/
+.headerText{
+    color: white;
+    font-size: var(--HeaderFontSize);
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.bodyText{
+    color: white;
+    text-align: center;
+}
+
+.highlightText{
+    color: var(--myYellow);
 }
