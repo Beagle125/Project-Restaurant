@@ -93,17 +93,20 @@ nav button:hover::after{
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) ), url('../static/home-bg1.png');
     background-position: 20% 60%;
     background-repeat: no-repeat;
+    background-size: cover;
     box-sizing: border-box;
     display: flex;
     height: 50%;
     justify-content: flex-start;
     padding-left: 80px;
-    width: 100vw;
+    width: 100%;
 }
 
 #homePage2{
     background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url('../static/home-bg2.png');
     background-position: 30% 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
     box-sizing: border-box;
     display: flex;
     height: 50%;
@@ -124,6 +127,8 @@ nav button:hover::after{
     align-items: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url('../static/menu-bg.png');
     background-position: 30% 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -146,6 +151,8 @@ nav button:hover::after{
     align-items: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url('../static/reserve-bg.png');
     background-position: 30% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
     box-sizing: border-box;
     display: flex;
     height: 100%;

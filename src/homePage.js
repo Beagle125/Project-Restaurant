@@ -45,7 +45,7 @@ export const homePageLoader = (mainContainer) => {
     bodyText2.className = 'bodyText';
 
     headerText2.textContent = 'Tea is more than';
-    highlightText2.textContent = 'hot-leaf juice!';
+    highlightText2.textContent = 'hot-leaf juice';
     bodySpan1.textContent = 'For centuries The Jasmine Dragon is committed to serving high-quality tea to the higher echelons of Earth Kingdom Society. Our philosophy is rooted in innovation but grounded in solid principles of tea-making.';
     bodySpan2.textContent = 'Our founder has an unbridled love for tea, and created The Jasmine Dragon to share this fiery passion! Today we continue that calling, where all our customers are treated with a first-class experience.';
 
