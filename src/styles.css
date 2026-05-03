@@ -4,6 +4,7 @@ html, body{
     background-color: black;/* To be removed */
     --myGreen: #3F792C;
     --myYellow: #C5A545;
+    --myDarkYellow: #322A12;
     --HeaderFontSize: 3rem;
     --BodyFontSize: 1.3rem;
 }
@@ -11,6 +12,12 @@ html, body{
 /*Set all font to be the same*/
 *{
     font-family: serif; /*This will be changed*/
+}
+
+/*Main Container Styles*/
+#content{
+    height: 100vh;
+    width: 100vw;
 }
 
 /*All navbar and header styles*/
@@ -133,6 +140,54 @@ nav button:hover::after{
     padding: 2rem 2rem 0 2rem
 }
 
+/*Reserve Page Styles*/
+#reservePage{
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url('../static/reserve-bg.png');
+    background-position: 30% 50%;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+.reserveForm .formItem{
+    display: flex;
+    flex-direction: column;
+}
+
+.reserveForm .formItem label{
+    text-align: left;
+}
+
+.formItem input{
+    background-color: var(--myDarkYellow);
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    font-size: var(--BodyFontSize);
+    height: 2rem;
+}
+
+.reserveForm button{
+    align-self: center;
+    background-color: var(--myDarkYellow);
+    border: 1px solid black;
+    border-radius: 20px;
+    color: white;
+    height: 50px;
+    transition: all 0.5s ease;
+    width: 200px;
+}
+
+.reserveForm button:hover{
+    background-color: black;
+    border: 1px solid var(--myYellow);
+    color: var(--myYellow);
+    transform: scale(1.1);
+}
+
 /*Text Section Styles*/
 .textSectionHome{
     animation: slide-in linear both;
@@ -158,6 +213,22 @@ nav button:hover::after{
     height: 50%;
     margin-top: 4rem;
     width: 100%;
+}
+
+.reserveForm{
+    animation: slide-in 0.5s ease-out backwards;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border-image: linear-gradient(to bottom, transparent 0%, transparent 10%, var(--myYellow) 90%) 1;
+    border-left: solid 1px;
+    border-right: solid 1px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    padding: 5rem 2rem 3rem 2rem;
+    width: 40%;
 }
 
 /*Font Styles*/

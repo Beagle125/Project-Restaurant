@@ -25,7 +25,7 @@ const DOMManipulator = (() => {
 
 
     /*Initial load to the homepage*/
-    addHomeModule();
+    //addHomeModule();
 
     /*Event listeners*/
     homeButton.addEventListener('click', () => {
