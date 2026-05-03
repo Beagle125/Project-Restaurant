@@ -185,7 +185,7 @@ nav button:hover::after{
     background-color: black;
     border: 1px solid var(--myYellow);
     color: var(--myYellow);
-    transform: scale(1.1);
+    transform: scale(1.06);
 }
 
 /*Text Section Styles*/

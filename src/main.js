@@ -17,6 +17,9 @@ const DOMManipulator = (() => {
         myModules.menuPageLoader(mainContainer);
     };
 
+    const addReserveModule = () => {
+        myModules.reservePageLoader(mainContainer);
+    }
 
     /*Remove the current content module*/
     const removeModule = () => {
@@ -25,7 +28,7 @@ const DOMManipulator = (() => {
 
 
     /*Initial load to the homepage*/
-    //addHomeModule();
+    addHomeModule();
 
     /*Event listeners*/
     homeButton.addEventListener('click', () => {
@@ -36,6 +39,11 @@ const DOMManipulator = (() => {
     menuButton.addEventListener('click', () => {
         removeModule();
         addMenuModule();
+    });
+
+    reserveButton.addEventListener('click', () => {
+        removeModule();
+        addReserveModule();
     });
 
 })();
