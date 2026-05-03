@@ -105,15 +105,30 @@ nav button:hover::after{
 
 .homePageTexts{
     animation: slide-in 0.5s ease-out backwards;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     letter-spacing: 1.1ch;
 }
 
+/*Menu Page Styles*/
+#menuPage{
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url('../static/menu-bg.png');
+    background-position: 30% 80%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: flex-end;
+    width: 100vw;
+}
+
+#menuPage p{
+    animation: slide-in 0.5s ease-out backwards;
+}
 /*Text Section Styles*/
-.textSection{
+.textSectionHome{
     animation: slide-in linear both;
     animation-timeline: view();
     animation-range: entry 50%;
@@ -126,6 +141,15 @@ nav button:hover::after{
     line-height: 1.5;
     padding: 4rem 2rem 0 2rem;
     width: 40%;
+}
+
+.textSectionMenu{
+    animation: slide-in 0.8s ease-out backwards;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    height: 50%;
+    margin-top: 4rem;
+    width: 100%;
 }
 
 /*Font Styles*/

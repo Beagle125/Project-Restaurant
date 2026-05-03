@@ -39,7 +39,7 @@ export const homePageLoader = (mainContainer) => {
     const breakLine4 = document.createElement('br');
     const bodySpan1 = document.createElement('span');
     const bodySpan2 = document.createElement('span');
-    textSection1.className = 'textSection';
+    textSection1.className = 'textSectionHome';
     headerText2.className = 'headerText';
     highlightText2.className = 'highlightText';
     bodyText2.className = 'bodyText';
