@@ -8,9 +8,13 @@ const DOMManipulator = (() => {
     const menuButton = document.getElementById('bMenu');
     const reserveButton = document.getElementById('bReserve');
 
-    /*Load the homepage*/
+    /*Load the modules*/
     const addHomeModule = () => {
         myModules.homePageLoader(mainContainer);
+    };
+
+    const addMenuModule = () => {
+        myModules.menuPageLoader(mainContainer);
     };
 
 
@@ -21,12 +25,17 @@ const DOMManipulator = (() => {
 
 
     /*Initial load to the homepage*/
-    //addHomeModule();
+    addHomeModule();
 
     /*Event listeners*/
     homeButton.addEventListener('click', () => {
         removeModule();
         addHomeModule();
+    });
+
+    menuButton.addEventListener('click', () => {
+        removeModule();
+        addMenuModule();
     });
 
 })();
